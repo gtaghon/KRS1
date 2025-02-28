@@ -18,7 +18,7 @@ def get_phi_psi(residue, pdb_file, chain="A"):
         print(f"Warning: PDB file '{pdb_file}' not found.")
         return 0.0, 0.0
     
-    if residue is '-':
+    if residue == '-':
         print(f"No residue at position, assigning 0,0")
         return 0.0, 0.0
 
